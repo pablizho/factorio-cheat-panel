@@ -1,0 +1,23 @@
+---------------------------------------------------------------------------------------------------
+Version: 2.1.0
+Date: 2026-11-25
+  Changes:
+    - Updated for Factorio 2.1.
+    - Quick-give buttons show localised item names and skip items missing in the current game version.
+    - The panel button now also appears when the mod is added to an existing save.
+    - God Mode uses the god controller instead of only destroying the character.
+  Bugfixes:
+    - Fixed crash when setting the evolution factor (evolution is per surface since 2.0).
+    - Fixed crash on the teleport button.
+    - Fixed crash when spawning an ore patch (collision layer water_tile).
+    - Fixed the trash slots modifier (character_trash_slot_count).
+    - Replaced removed items (red/green wire, fusion reactor equipment) in the quick-give list.
+    - Picking up items from the ground no longer deletes the part that did not fit.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.0
+Date: 2026-03-14
+  Changes:
+    - Added force modifiers section.
+    - Full list of cheats from the wiki.
+    - Scroll pane, item search, teleport, evolution.
+    - Russian interface with emoji.

@@ -1,9 +1,9 @@
 # Factorio Cheat Panel
 
-**A scrollable in-game cheat and debug GUI for Factorio 2.0. Ctrl+F9.**
+**A scrollable in-game cheat and debug GUI for Factorio 2.1. Ctrl+F9.**
 
 ![Lua](https://img.shields.io/badge/Lua-2C2D72?style=flat-square&logo=lua&logoColor=white)
-![Factorio](https://img.shields.io/badge/Factorio-2.0%20%2F%20Space%20Age-FFA500?style=flat-square)
+![Factorio](https://img.shields.io/badge/Factorio-2.1-FFA500?style=flat-square)
 ![MIT](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
 
 ~950 lines of Lua · 8 sections · 60+ actions · depends on `base` only
@@ -62,18 +62,18 @@ local a = math.floor(amount * (1 - dist / (size + 2)) * (0.75 + math.random() * 
 
 It also checks `not tile.collides_with("water-tile")` and clears pre-existing resources before `create_entity`, so you don't get ore floating in a lake.
 
-**Correct 2.0-era API.** `prototypes.item` rather than the removed `game.item_prototypes`; `choose-elem-button` with `elem_filters` for the ore picker; `player.insert` return values used for accurate "gave you N" feedback.
+**Correct 2.1 API.** `prototypes.item` rather than the removed `game.item_prototypes`; per-surface `set_evolution_factor`; `choose-elem-button` with `elem_filters` for the ore picker; `player.insert` return values used for accurate "gave you N" feedback.
 
 ## Install
 
-Download the release zip and unpack into your mods folder so that `cheat-panel_2.0.0/` sits directly inside it:
+Download the release zip and unpack into your mods folder so that `cheat-panel_2.1.0/` sits directly inside it:
 
 - Windows — `%APPDATA%\Factorio\mods\`
 - Linux — `~/.factorio/mods/`
 
 Then **Mods → enable "Cheat Panel" → restart**. Open with `Ctrl+F9` or the ⚠️ button on the toolbar.
 
-Cloning the repository directly does not work — the mod folder is one level down, so copy `cheat-panel_2.0.0/` out of the repo root.
+Cloning the repository directly does not work — the mod folder is one level down, so copy `cheat-panel_2.1.0/` out of the repo root.
 
 ## Known issues
 
@@ -96,7 +96,7 @@ Cloning the repository directly does not work — the mod folder is one level do
 
 <br>
 
-**Панель читов и отладки для Factorio 2.0 в одном прокручиваемом окне. Ctrl+F9.**
+**Панель читов и отладки для Factorio 2.1 в одном прокручиваемом окне. Ctrl+F9.**
 
 ### Зачем
 
